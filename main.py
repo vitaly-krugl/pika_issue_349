@@ -2,7 +2,6 @@
 
 import time
 import uuid
-from multiprocessing import Process
 
 import pika
 
@@ -51,7 +50,4 @@ class Consumer(object):
 
 if __name__ == '__main__':
     consumer = Consumer()
-    process = Process(target=consumer.run)
-    process.start()
-
-    consumer.publish(ROUTING_KEY, 'blah')
+    consumer.run()
