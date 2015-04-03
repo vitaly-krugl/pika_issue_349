@@ -1,1 +1,1 @@
-pika==0.9.14
+git+git://github.com/pika/pika@409670bdbea13d11a43d3d02162d49a200e450a5
