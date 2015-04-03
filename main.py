@@ -50,4 +50,5 @@ class Consumer(object):
 
 if __name__ == '__main__':
     consumer = Consumer()
+    consumer.publish(ROUTING_KEY, 'blah')
     consumer.run()
